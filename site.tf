@@ -7,8 +7,6 @@ provider "aws" {
 resource "aws_s3_bucket" "site" {
   bucket = "s3-site-arsicfc"
   acl    = "public-read"
-
-
   website {
     index_document = "Resume.html"
  }
